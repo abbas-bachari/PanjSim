@@ -136,6 +136,6 @@ client.get_notification(lang='en')
 client.get_countries_list()
 
 # m. پیداکردن ارزانترین قیمت
-client.find_low_price('telegram',5)
+client.find_low_price(product='telegram',limit=5)
 ```
 Powered by [Abbas Bachari](https://github.com/abbas-bachari).
