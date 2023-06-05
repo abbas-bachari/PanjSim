@@ -1,7 +1,7 @@
-[![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/python-5sim)
-[![python](https://img.shields.io/badge/Python%20-3.6+-green?style=plastic&logo=Python)](https://python.org)
+[![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/python-5sim) [![python](https://img.shields.io/badge/Python%20-3.6+-green?style=plastic&logo=Python)](https://python.org)
 
-# معرفی PanjSim 
+ # معرفی PanjSim 
+
 یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
 #
 
@@ -14,7 +14,7 @@
 #
 ## راهنمای نصب
 
-قبل از ادامه، باید یک حساب در [5sim.net](https://5sim.net/) و [یک کلید API شخصی تولید کنید] (https://5sim.net/settings/security) برای استفاده ثبت کنید. 
+قبل از ادامه، باید یک حساب در [5sim.net](https://5sim.net/) و [یک کلید API شخصی](https://5sim.net/settings/security) برای استفاده ثبت کنید. 
 
  
 #
@@ -33,6 +33,7 @@ pip install 5sim-python
 <hr>
 
 ## راهنمای استفاده
+
 ###  Client - اتصال به سرویس
 
 ```python
@@ -45,13 +46,12 @@ client = PanjSim(API_KEY)
 ```
  
 
-#### Endpoints - منابع اولیه
-
-Official docs [here](https://docs.5sim.net/) - مستندات
+### Endpoints - منابع اولیه
+Official docs [here-مستندات](https://docs.5sim.net/)
 #
 
 
-#### U. اطلاعات حساب
+### U. اطلاعات حساب
 
 ```python
 
@@ -130,7 +130,7 @@ Purchase.rebuy_number(product="telegram",number='+177777')
 Purchase.buy_hosting_number(country=country.name,operator='any',product='1day')
 ```
 #
-## M. امکانات بیشتر
+### M. امکانات بیشتر
 
 ```python
 # m. گرفتن اعلان سایت
