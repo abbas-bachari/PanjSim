@@ -1,97 +1,103 @@
 [![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/PanjSim)
 [![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
 
-# معرفی PanjSim 
-یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
+# What is PanjSim ?
+A simple Python API for [5sim.net](https://5sim.net)
 #
 
-# خدمات [5sim.net](https://5sim.net)
-شماره های مجازی برای دریافت پیامک و فعال سازی هر سرویس
-پس از ثبت نام در شبکه های اجتماعی، پیام رسان ها، پلتفرم های C2C و سایر وب سایت ها، فعال سازی حساب کاربری پیامکی الزامی است. 5SIM این فرصت را فراهم می کند تا با کمک یک شماره تلفن مجازی موقت، بدون استفاده از شماره شخصی، روند تأیید را دور بزنید. با دریافت کد تایید آنلاین، پروفایل های زیادی را در وب سایت ها ثبت کنید.
+# About [5sim.net](https://5sim.net)
+Virtual numbers for receiving SMS and activation of any service
+
+Upon registration on social networks, messengers, C2C platforms and on other websites, an SMS activation of account is required. 5SIM provides the opportunity to bypass verification procedure with the help of a temporary virtual phone number, without using the personal one. Register many profiles on websites, by receiving a confirmation code online.
+#
+
+## Installation guide
+Before proceeding, you should register an account on [5sim.net](https://5sim.net/) and [generate a personal API key](https://5sim.net/settings/security) to use. 
+
 
 #
 
-## راهنمای نصب
-قبل از ادامه، باید یک حساب در [5sim.net](https://5sim.net/) و [یک کلید API شخصی](https://5sim.net/settings/security) برای استفاده ثبت کنید. 
-#
-
-نصب از سورس کد:
-
+Install from source:
 ``` bash
 pip install git+https://github.com/abbas-bachari/PanjSim.git
 ```
 
-نصب از  [PyPI](https://pypi.org/project/PanjSim/):
+Alternatively, install from [PyPI](https://pypi.org/project/PanjSim/):
 
 ```bash
 pip install PanjSim
 ```
 <hr>
 
-## راهنمای استفاده
+## user manual
 
-###  Client - اتصال به سرویس
+###  Client 
 
 ```python
 from PanjSim import PanjSim
 
-# کلید خود را جایگذین کنید
+# Replace your API key...
 API_KEY = 'eyJhbGciOiJSUzUx.....' 
 
 client = PanjSim(API_KEY) 
 ```
  
 
-### Endpoints - منابع اولیه
-Official docs [here-مستندات](https://docs.5sim.net/)
+### Endpoints 
+Official docs [here](https://docs.5sim.net/)
 #
 
 
-### U. اطلاعات حساب
+### Account Information
 
 ```python
 
 user=client.User()
 
-# U. گرفتن موجودی حساب
+# Get account balance
 balance=user.get_balance()
 
 
-# U. گرفتن تاریخچه سفارشات
+# Get Orders history
 order_history=user.get_orders_history()
 
 
-# U. گرفتن تاریخچه تراکنش ها
+# Get payments history
 pyment_history=user.get_payments_history()
 
 ```
 #
-### P. قیمت و محصولات
+### Price and products
 
 ```python
 
 from PanjSim.Countrys import usa
 
 country=usa
+
+
 product=client.Products()
 
-# P. گرفتن محصولات یک کشور بر اساس اوپراتور
+# Receive the name, the price, quantity of all products, available to buy.
 operator=country.operators.virtual23.name
 product.get_products(country=country.name,operator=operator)
 
 
-# P. گرفتن قیمت تمام محصولات
+# Get all product prices
 product.get_prices()
 
-# P. گرفتن قیمت محصولات بر اساس کشور
+# Get product prices by country
 product.get_prices(country=usa.name)
 
-# P. گرفتن قیمت محصول بر اساس کشور
+# Get product prices for a specific product
+product.get_prices(product="telegram")
+
+# Get product prices by country and specific product
 product.get_prices(country=usa.name,product="telegram")
 
 ```
 #
-### O. خرید کردن
+### Purchase
 
 ```python
 from PanjSim.Countrys import usa
@@ -100,42 +106,42 @@ country=usa
 Purchase=client.Purchase()
 
 
-# o. خرید شماره جدید
+# Buy activation number
 operator=country.operators.virtual23.name
 order=Purchase.buy_activation_number(country=country.name,operator=operator,product='telegram')
 
-# o. بررسی وضعیت خرید - دریافت کد اس ام اس
+# Check order (Get SMS)
 Purchase.check_order(order_id=order['id'])
 
-# o. مسدود کردن شماره
+# Ban order
 Purchase.ban_order(order_id=order['id'])
 
-# o. لغو خرید
+# Cancel order
 Purchase.cancel_order(order_id=order['id'])
 
-# o. پایان دادن به خرید
+# Finish order
 Purchase.finish_order(order_id=order['id'])
 
-# o. گرفتن لیست پیامها
+# Get SMS inbox list
 Purchase.get_sms_inbox(order_id=order['id'])
 
-# o. خرید مجدد
+# Re-buy number
 Purchase.rebuy_number(product="telegram",number='+177777')
 
-# o. اجاره کردن شماره
+# Buy hosting number
 Purchase.buy_hosting_number(country=country.name,operator='any',product='1day')
 ```
 #
-### M. امکانات بیشتر
+### More features
 
 ```python
-# m. گرفتن اعلان سایت
+# Get notifications
 client.get_notification(lang='en')
 
-# m. گرفتن لیست کشورها مراه با اپراتور و محصولات
+# Get countries list
 client.get_countries_list()
 
-# m. پیداکردن ارزانترین قیمت
+# Find the cheapest price
 client.find_low_price(product='telegram',limit=5)
 ```
 Powered by [Abbas Bachari](https://github.com/abbas-bachari).
