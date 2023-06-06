@@ -4,7 +4,7 @@ setup(
     name='PanjSim',
     version='1.0.0',
     author='Abbas Bachari',
-    author_email='abbas-bachari@hotmail.com',
+    author_email='',
     description='A simple Python API for 5sim.net',
     long_description=open('README.md',encoding='utf-8').read(),
     long_description_content_type='text/markdown',
@@ -13,11 +13,11 @@ setup(
     url='https://github.com/abbas-bachari/PanjSim',
     python_requires='>=3.7',
     project_urls={
+    "Homepage":'https://github.com/abbas-bachari/PanjSim',
     'Documentation': 'https://github.com/abbas-bachari/PanjSim',
-    'Funding': 'https://donate.pypi.org',
-    'Say Thanks!': 'https://saythanks.io/to/abbas-bachari',
     'Source': 'https://github.com/abbas-bachari/PanjSim/',
     'Tracker': 'https://github.com/abbas-bachari/PanjSim/issues',
+   
 },
     
     install_requires=['requests'],
