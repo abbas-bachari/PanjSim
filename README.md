@@ -54,6 +54,12 @@ Official docs [here](https://docs.5sim.net/)
 ### Account Information
 
 ```python
+from PanjSim import PanjSim
+
+# Replace your API key...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
 
 user=client.User()
 
@@ -73,8 +79,13 @@ pyment_history=user.get_payments_history()
 ### Price and products
 
 ```python
-
+from PanjSim import PanjSim
 from PanjSim.Countrys import usa
+
+# Replace your API key...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
 
 country=usa
 
@@ -103,9 +114,15 @@ product.get_prices(country=usa.name,product="telegram")
 ### Purchase
 
 ```python
+from PanjSim import PanjSim
 from PanjSim.Countrys import usa
+# Replace your API key...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
 
 country=usa
+
 Purchase=client.Purchase()
 
 
@@ -138,6 +155,14 @@ Purchase.buy_hosting_number(country=country.name,operator='any',product='1day')
 ### More features
 
 ```python
+from PanjSim import PanjSim
+from PanjSim.Countrys import usa
+
+# Replace your API key...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
+
 # Get notifications
 client.get_notification(lang='en')
 

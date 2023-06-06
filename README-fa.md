@@ -35,10 +35,13 @@ pip install PanjSim
 ```python
 from PanjSim import PanjSim
 
-# کلید خود را جایگذین کنید
+
+# i. کلید خود را جایگذین کنید ...
 API_KEY = 'eyJhbGciOiJSUzUx.....' 
 
 client = PanjSim(API_KEY) 
+
+
 ```
  
 
@@ -50,6 +53,14 @@ Official docs [here-مستندات](https://docs.5sim.net/)
 ### U. اطلاعات حساب
 
 ```python
+from PanjSim import PanjSim
+
+
+# i. کلید خود را جایگذین کنید ...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
+
 
 user=client.User()
 
@@ -70,9 +81,16 @@ pyment_history=user.get_payments_history()
 
 ```python
 
+from PanjSim import PanjSim
 from PanjSim.Countrys import usa
 
+# i. کلید خود را جایگذین کنید ...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
+
 country=usa
+
 product=client.Products()
 
 # P. گرفتن محصولات یک کشور بر اساس اوپراتور
@@ -96,14 +114,22 @@ product.get_prices(country=usa.name,product="telegram")
 ### O. خرید کردن
 
 ```python
+from PanjSim import PanjSim
 from PanjSim.Countrys import usa
 
+# i. کلید خود را جایگذین کنید ...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
+
 country=usa
+
 Purchase=client.Purchase()
 
 
 # o. خرید شماره جدید
 operator=country.operators.virtual23.name
+
 order=Purchase.buy_activation_number(country=country.name,operator=operator,product='telegram')
 
 # o. بررسی وضعیت خرید - دریافت کد اس ام اس
@@ -131,6 +157,15 @@ Purchase.buy_hosting_number(country=country.name,operator='any',product='1day')
 ### M. امکانات بیشتر
 
 ```python
+from PanjSim import PanjSim
+
+
+# i. کلید خود را جایگذین کنید ...
+API_KEY = 'eyJhbGciOiJSUzUx.....' 
+
+client = PanjSim(API_KEY) 
+
+
 # m. گرفتن اعلان سایت
 client.get_notification(lang='en')
 
