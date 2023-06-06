@@ -2,9 +2,9 @@
 [![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
 
 
-# [ENGLISH](https://github.com/abbas-bachari/PanjSim) | [فارسی](https://github.com/abbas-bachari/PanjSim/blob/main/README-fa.md)
 
-# What is PanjSim ? 
+
+# What is PanjSim ? ([فارسی](https://github.com/abbas-bachari/PanjSim/blob/main/README-fa.md))
 A simple Python API for [5sim.net](https://5sim.net)
 #
 
