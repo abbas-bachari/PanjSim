@@ -1,31 +1,27 @@
-[![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/python-5sim) [![python](https://img.shields.io/badge/Python%20-3.6+-green?style=plastic&logo=Python)](https://python.org)
+[![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/PanjSim)
+[![python](https://img.shields.io/badge/Python%20-3.6+-green?style=plastic&logo=Python)](https://python.org)
 
- # معرفی PanjSim 
-
+# معرفی PanjSim 
 یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
 #
 
 # خدمات [5sim.net](https://5sim.net)
-
 شماره های مجازی برای دریافت پیامک و فعال سازی هر سرویس
-
 پس از ثبت نام در شبکه های اجتماعی، پیام رسان ها، پلتفرم های C2C و سایر وب سایت ها، فعال سازی حساب کاربری پیامکی الزامی است. 5SIM این فرصت را فراهم می کند تا با کمک یک شماره تلفن مجازی موقت، بدون استفاده از شماره شخصی، روند تأیید را دور بزنید. با دریافت کد تایید آنلاین، پروفایل های زیادی را در وب سایت ها ثبت کنید.
 
 #
+
 ## راهنمای نصب
-
 قبل از ادامه، باید یک حساب در [5sim.net](https://5sim.net/) و [یک کلید API شخصی](https://5sim.net/settings/security) برای استفاده ثبت کنید. 
-
- 
 #
 
 نصب از سورس کد:
 
 ``` bash
-pip install git+https://github.com/abbas-bachari/python-5sim.git
+pip install git+https://github.com/abbas-bachari/PanjSim.git
 ```
 
-نصب از  [PyPI](https://pypi.org/project/python-5sim/):
+نصب از  [PyPI](https://pypi.org/project/PanjSim/):
 
 ```bash
 pip install 5sim-python
