@@ -24,7 +24,7 @@ pip install git+https://github.com/abbas-bachari/PanjSim.git
 نصب از  [PyPI](https://pypi.org/project/PanjSim/):
 
 ```bash
-pip install 5sim-python
+pip install PanjSim
 ```
 <hr>
 
