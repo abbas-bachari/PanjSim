@@ -1,5 +1,5 @@
 [![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/PanjSim)
-[![python](https://img.shields.io/badge/Python%20-3.6+-green?style=plastic&logo=Python)](https://python.org)
+[![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
 
 # معرفی PanjSim 
 یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
