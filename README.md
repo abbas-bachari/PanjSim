@@ -1,7 +1,10 @@
 [![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/PanjSim)
 [![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
 
-# What is PanjSim ?
+
+# [ENGLISH](https://github.com/abbas-bachari/PanjSim) | [فارسی](https://github.com/abbas-bachari/PanjSim/blob/main/README-fa.md)
+
+# What is PanjSim ? 
 A simple Python API for [5sim.net](https://5sim.net)
 #
 
