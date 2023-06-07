@@ -93,7 +93,7 @@ country=usa
 product=client.Products()
 
 # Receive the name, the price, quantity of all products, available to buy.
-operator=country.operators.virtual23.name
+operator=country.Operator.virtual23
 product.get_products(country=country.name,operator=operator)
 
 
@@ -127,7 +127,7 @@ Purchase=client.Purchase()
 
 
 # Buy activation number
-operator=country.operators.virtual23.name
+operator=country.Operator.virtual23
 order=Purchase.buy_activation_number(country=country.name,operator=operator,product='telegram')
 
 # Check order (Get SMS)

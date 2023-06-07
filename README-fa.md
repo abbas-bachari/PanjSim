@@ -94,7 +94,7 @@ country=usa
 product=client.Products()
 
 # P. گرفتن محصولات یک کشور بر اساس اوپراتور
-operator=country.operators.virtual23.name
+operator=country.Operator.virtual23
 product.get_products(country=country.name,operator=operator)
 
 
@@ -128,7 +128,7 @@ Purchase=client.Purchase()
 
 
 # o. خرید شماره جدید
-operator=country.operators.virtual23.name
+operator=country.Operator.virtual23
 
 order=Purchase.buy_activation_number(country=country.name,operator=operator,product='telegram')
 
