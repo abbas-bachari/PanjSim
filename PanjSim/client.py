@@ -65,7 +65,7 @@ class PanjSim:
             nv=[]
             for x,y in v.items():
                 
-                if y['count'] >=100:
+                if y['count'] > 0:
                     nv.append((x,y))
 
             

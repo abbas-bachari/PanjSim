@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PanjSim',
-    version='1.0.3',
+    version='1.0.4',
     author='Abbas Bachari',
     author_email='abbas-bachari@hotmail.com',
     description='A simple Python API for 5sim.net',
