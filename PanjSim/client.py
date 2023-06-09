@@ -48,7 +48,7 @@ class PanjSim:
         endpoint = f"/v1/guest/flash/{lang}"
         response = self.session.get(endpoint)
         return response.json()
-    def find_low_price(self,product:str,limit:int=10) -> dict|list:
+    def find_low_price(self,product:str,limit:int=10,available:int=1) -> dict|list:
         '''
         * if limit = 1 return dict low country price else return cost list
         + return {'cost': 8.4, 'count': 2741, 'rate': 6.84, 'contry': 'india', 'operator': 'virtual4'}
@@ -65,7 +65,7 @@ class PanjSim:
             nv=[]
             for x,y in v.items():
                 
-                if y['count'] > 0:
+                if y['count'] >= available:
                     nv.append((x,y))
 
             
