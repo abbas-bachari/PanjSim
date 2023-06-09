@@ -28,7 +28,11 @@ pip install git+https://github.com/abbas-bachari/PanjSim.git
 Alternatively, install from [PyPI](https://pypi.org/project/PanjSim/):
 
 ```bash
+# Install:
 pip install PanjSim
+
+# Update:
+pip install -U PanjSim
 ```
 <hr>
 

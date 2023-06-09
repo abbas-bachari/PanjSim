@@ -24,7 +24,11 @@ pip install git+https://github.com/abbas-bachari/PanjSim.git
 نصب از  [PyPI](https://pypi.org/project/PanjSim/):
 
 ```bash
+# I.  نصب:
 pip install PanjSim
+
+# I. بروزرسانی:
+pip install -U PanjSim
 ```
 <hr>
 
