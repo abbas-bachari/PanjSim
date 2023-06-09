@@ -64,8 +64,9 @@ class HttpClient:
         try:
             req_json: dict[str, Any] = req.json()
         
-        except JSONDecodeError: # i.e. sometimes it return just int status code
-            return req
+        except JSONDecodeError: 
+            raise ErrorJSONDecode(req.status_code,req.text)
+        
         else:
             if isinstance(req_json, dict):
                return req

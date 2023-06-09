@@ -1,4 +1,4 @@
-[![Abbas Bachari](https://img.shields.io/badge/Abbas%20Bachari-PanjSim-green?style=plastic&logo=codemagic)](https://github.com/abbas-bachari/PanjSim)
+[![PanjSim](https://img.shields.io/badge/PanjSim%20-Version%201.0.3-green?style=plastic&logo=codemagic)](https://python.org)
 [![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
 
 
