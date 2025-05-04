@@ -1,10 +1,25 @@
-[![PanjSim](https://img.shields.io/badge/PanjSim%20-Version%201.0.4-green?style=plastic&logo=codemagic)](https://python.org)
-[![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
-![PyPI - Version](https://img.shields.io/pypi/v/PanjSim)
-![License](https://img.shields.io/pypi/l/PanjSim)
-![Downloads - Total](https://pepy.tech/badge/PanjSim)
+<h1 align="center">PanjSim</h1>
+<p align="center">
+<a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/PanjSim%20-Version%201.0.4-green?style=plastic&logo=codemagic" alt="PanjSim"></a>
+<a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python" alt="Python"></a>
+  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/v/PanjSim?style=flat-square" alt="PyPI - Version"></a>
+  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/l/PanjSim?style=flat-square" alt="License"></a>
+  <a href="https://pepy.tech/project/PanjSim"><img src="https://pepy.tech/badge/PanjSim?style=flat-square" alt="Downloads - Total"></a>
+  
+</p>
+<p align="center">
+  <a href="/README.md" style="text-decoration:none; display:inline-block; margin:0 10px;">
+    <img src="https://flagcdn.com/w40/gb.png" alt="English" width="24" style="vertical-align:middle;">
+    <strong style="vertical-align:middle; font-size:1.2em; color:#0f9d58">English</strong>
+  </a>
+  <a href="/README-fa.md" style="text-decoration:none; display:inline-block; margin:0 10px;">
+    <img src="https://flagcdn.com/w40/ir.png" alt="فارسی" width="24" style="vertical-align:middle;">
+    <strong style="vertical-align:middle; font-size:1.2em; color:#0f9d58">فارسی</strong>
+  </a>
+</p>
 
-# پنج سیم (PanjSim) چیست؟ ([English](https://github.com/abbas-bachari/PanjSim))
+
+# پنج سیم (PanjSim) چیست؟
 یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
 #
 
