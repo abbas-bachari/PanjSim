@@ -1,5 +1,8 @@
 [![PanjSim](https://img.shields.io/badge/PanjSim%20-Version%201.0.4-green?style=plastic&logo=codemagic)](https://python.org)
 [![python](https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python)](https://python.org)
+![PyPI - Version](https://img.shields.io/pypi/v/PanjSim)
+![License](https://img.shields.io/pypi/l/PanjSim)
+![Downloads - Total](https://pepy.tech/badge/PanjSim)
 
 # پنج سیم (PanjSim) چیست؟ ([English](https://github.com/abbas-bachari/PanjSim))
 یک کتابخانه ساده پایتون نوشته شده برای [5sim.net](https://5sim.net)
