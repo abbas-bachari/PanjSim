@@ -1,10 +1,10 @@
 <h1 align="center">PanjSim</h1>
 <p align="center">
-<a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/PanjSim%20-Version%201.0.4-green?style=plastic&logo=codemagic" alt="PanjSim"></a>
-<a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python" alt="Python"></a>
-  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/v/PanjSim?style=flat-square" alt="PyPI - Version"></a>
-  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/l/PanjSim?style=flat-square" alt="License"></a>
-  <a href="https://pepy.tech/project/PanjSim"><img src="https://pepy.tech/badge/PanjSim?style=flat-square" alt="Downloads - Total"></a>
+  <a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/PanjSim%20-Version%201.0.4-green?style=plastic&logo=codemagic" alt="PanjSim"></a>
+  <a href="https://github.com/abbas-bachari/PanjSim"><img src="https://img.shields.io/badge/Python%20-3.7+-green?style=plastic&logo=Python" alt="Python"></a>
+  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/v/PanjSim?style=plastic" alt="PyPI - Version"></a>
+  <a href="https://pypi.org/project/PanjSim/"><img src="https://img.shields.io/pypi/l/PanjSim?style=plastic" alt="License"></a>
+  <a href="https://pepy.tech/project/PanjSim"><img src="https://pepy.tech/badge/PanjSim?style=plastic" alt="Downloads - Total"></a>
   
 </p>
 <p align="center">
